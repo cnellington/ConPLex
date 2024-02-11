@@ -2,6 +2,14 @@
 
 This repository documents the code used to generate the results for our [PNAS](https://www.pnas.org/doi/10.1073/pnas.2220778120) article. The updated package, which is continuously being developed, can be found at [this repository](https://github.com/samsledje/ConPLex). Please submit an issue or email samsl@mit.edu with any questions.
 
+### Installation
+```
+conda env create -n <your-name> python=3.11
+conda activate <your-name>
+pip3 install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu118
+pip3 install -r requirements.txt
+```
+
 ### Sample Usage
 
 `python train_DTI.py --exp-id ExperimentName --config configs/default_config.yaml`
